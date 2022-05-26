@@ -31,7 +31,8 @@ void i2cMasterWriteToDevice(int portNum, uint8_t deviceAddr, berry::list writeBu
     auto res = i2c_master_write_to_device(portNum, deviceAddr, writeBufMapped.data(), writeBuf.size(), 1000 / portTICK_RATE_MS);
 
     if (res != ESP_OK) {
-        BELL_LOG(info, "i2c", "Write failed!");
+        BELL_LOG(error, "i2c", "Write failed!");
+        BELL_LOG(error, "i2c", "Error from I2C write command: %u", res);
     }
 }
 
