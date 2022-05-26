@@ -16,3 +16,15 @@ py/
 .cache
 .cache/
 authBlob.json
+**/**/.project
+**/**/.cproject
+**/**/CMakeCache.txt
+**/**/CMakeFiles
+euphonium/Makefile
+euphonium/berry/
+euphonium/cmake_install.cmake
+targets/esp32/euphonium-.tar.gz
+targets/esp32/ota.bin
+targets/esp32/ota_checksum.txt
+targets/esp32/scripts.tar
+targets/esp32/scripts_checksum.txt
