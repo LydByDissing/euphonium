@@ -16,3 +16,7 @@ py/
 .cache
 .cache/
 authBlob.json
+**/CMakeCache.txt
+**/CMakeFiles
+**/build
+**/Makefile
